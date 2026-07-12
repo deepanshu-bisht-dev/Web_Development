@@ -23,7 +23,47 @@
     <input type="password" id="cpass" name="confirm password" placeholder="Confirm password">
     <br><br>
     <!-- Use radio buttons when users need to select only one option from a group. -->
-     <p>Choose your gender</p>
+    <p>Choose your gender</p>
+    <label for="gender">Male</label>
+    <input type="radio" id="male" name="gender" value="male">
+
+    <label for="gender">Female</label>
+    <input type="radio" id="female" name="gender" value="female">
+
+    <label for="gender">Other</label>
+    <input type="radio" id="other" name="gender" value="other">
+    <!-- All radio buttons in a group should have the same name.
+        Only one option can be selected. -->
+    <br><br>
+    <!-- Use checkboxes when users can select multiple options. -->
+    <p>Choose your hobby</p>
+
+    <input type="checkbox" id="reading" name="hobby" value="reading">
+    <label for="reading">Reading</label>
+
+    <input type="checkbox" id="sports" name="hobby" value="sports">
+    <label for="sports">Sports</label>
+
+    <input type="checkbox" id="music" name="hobby" value="music">
+    <label for="music">Music</label>
+    <br><br>
+
+    <!-- Use the <select> tag with <option> to let users pick one option from a dropdown. -->
+    <label for="city">Choose a city:</label>
+    <select id="city" name="city">
+        <option value="delhi">Delhi</option>
+        <option value="mumbai">Mumbai</option>
+        <option value="bangalore">Bangalore</option>
+    </select>
+    <br><br>
+
+    <!-- Use the <textarea> tag to let users type multiple lines of text. -->
+
+    <label for="message">Give your views about our page</label><br>
+    <textarea id="message" name="message" rows="4" cols="30"></textarea>
+    <br><br>
+
+
     <input type="submit" value="Submit">
 </body>
 

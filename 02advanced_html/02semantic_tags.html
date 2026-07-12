@@ -1,0 +1,86 @@
+<!-- Inline vs Block Elements in HTML
+In HTML, elements are broadly categorized as inline or block based on how they behave in the document flow.
+
+Block Elements
+Start on a new line.
+Take up the full width available.
+Can contain other block and inline elements.
+Common Block Elements:
+<div>
+<p>
+<h1> to <h6>
+<section>
+<article>
+<ul>, <ol>, <li> 
+    
+Inline Elements
+Do not start on a new line.
+Only take up as much width as necessary.
+Usually used to style small portions of content within block elements.
+Common Inline Elements:
+<span>
+<a>
+<strong>, <em>
+<img>
+<code>
+    
+    
+What Are Semantic Tags?
+Semantic tags clearly describe the meaning of the content they contain.
+They help both developers and browsers understand the structure of the page.
+
+Example:
+
+<div> says nothing about its content.
+<header> clearly means it's a page or section header. 
+    
+    
+Tag	         Purpose
+<header>	Top section of a page or section
+<nav>	    Navigation links
+<main>	    Main content of the page
+<section>	A standalone section
+<article>	Self-contained content like a blog
+<aside>	    Sidebar or extra info
+<footer>	Bottom section of a page or section-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Semantic Page</title>
+  </head>
+  <body>
+
+    <header>
+      <h1>My Website</h1>
+    </header>
+
+    <nav>
+      <a href="#">Home</a> |
+      <a href="#">About</a> |
+      <a href="#">Contact</a>
+    </nav>
+
+    <main>
+      <section>
+        <h2>Welcome</h2>
+        <p>This is the welcome section.</p>
+      </section>
+
+      <article>
+        <h2>Blog Post</h2>
+        <p>This is a blog post inside an article tag.</p>
+      </article>
+    </main>
+
+    <aside>
+      <p>This is a sidebar with related links.</p>
+    </aside>
+
+    <footer>
+      <p>Copyright © 2025</p>
+    </footer>
+
+  </body>
+</html>
+

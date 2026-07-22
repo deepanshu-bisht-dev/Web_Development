@@ -1,0 +1,11 @@
+Introduction to CSS
+CSS (Cascading Style Sheets) is used to style and layout web pages — including colors, fonts, spacing, and positioning of elements. While HTML gives structure to a web page, CSS makes it look beautiful and usable.
+
+Why CSS?
+Without CSS, all websites would look plain, like unstyled documents. CSS helps you:
+
+- Change colors and fonts
+- Add spacing and layout
+- Make responsive designs for mobile
+- Animate and transition between states
+- Separation of concerns: HTML for structure, CSS for style

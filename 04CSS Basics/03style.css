@@ -3,3 +3,4 @@ h1{
     font-size: 56px;
     font-weight: 200;
 }
+/* CSS written in a separate file and linked to the HTML file. This is the most recommended method for real-world projects. */

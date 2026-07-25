@@ -1,0 +1,101 @@
+<!-- We are going to understand about css selectors in this webpage. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Every css rile consist of a selector and a declaration block.
+        selector {
+             property: value;
+        } */
+
+        h1 {
+            color: navy;
+            font-size: 32px;
+        }
+
+        /* - h1 is the selector
+           - color and font-size are properties
+           - navy and 32px are the values
+           - The curly braces {} contain the declaration block
+           - Each declaration ends with a semicolon ; */
+
+        /* --- Types of selectors --- 
+          1. Element Selector - Selects all elements of a specific type. For ex. as we have selected h1 as selecto name up there so it will target all <h1></h1> elements.
+          2. Class Selector - Selects element with a specific class. */
+        .red {
+            color: brown;
+        }
+
+        .small {
+            font-size: 20px;
+        }
+
+        .big {
+            font-size: 50px;
+        }
+
+        .bgpink {
+            background-color: pink;
+        }
+
+        /* Use a period . before the class name.This type we create class selectors.
+          3. ID Selector - Selects a single element with a unique id.  */
+        #main-heading {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Use a hash # before the ID name. This type we create id selector.
+         4. Universal Selector - It applies style to all elements in the page. */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* This is commonly used for resetting default styles. */
+
+        /*  Grouping selectors - This is a technique to apply same style to multiple elemnts at once avoiding repitition. */
+
+        h1,
+        h2,
+        h3 {
+            color: darkblue;
+        }
+
+        /* Descendant Selectors - Target elements nested inside other elements. */
+        div p {
+            font-style: italic;
+        }
+
+        /* Combining Class and Element Selectors - You can be more specific by combining them. */
+        /* p.note {
+            color: teal;
+        } */
+    </style>
+</head>
+
+<body>
+    <h1 id="main-heading">CSS Selectors</h1>
+    <p class="red small">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, nostrum hic magni sed vel
+        impedit iste
+        tenetur ratione, quaerat officiis similique facere quo voluptatibus iure repellendus autem ad qui molestiae
+        nulla! Quis, suscipit velit eligendi unde exercitationem cum ratione magni culpa voluptatem aperiam tempore,
+        fugit sed labore? Commodi quibusdam quam explicabo, nostrum quo laboriosam tempore necessitatibus excepturi
+        laudantium. Aperiam sit nemo asperiores perferendis ut natus ipsa dolorem tempora tenetur!</p>
+    <h2>Selectorss</h2>
+    <p class="big bgpink">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quo non illum impedit
+        accusamus a molestiae
+        eveniet magnam praesentium alias, sed nisi similique iste! Aliquam neque quidem aperiam quis debitis ratione.
+        Maiores voluptate voluptates, eos similique distinctio eius laboriosam quo earum necessitatibus, repellendus
+        molestias explicabo dolore nostrum odio vel! Consequatur ratione provident corporis ullam itaque dicta
+        repudiandae expedita, quia doloribus, dolores perferendis impedit nobis voluptatibus porro eaque. Atque,
+        aperiam?</p>
+    <div class="small red">
+        <p>This paragraph is inside div. </p>
+    </div>
+</body>
+
+</html>

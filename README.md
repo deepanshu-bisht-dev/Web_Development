@@ -39,4 +39,8 @@ This repo is where I'm learning web development, step by step — starting with 
 **Deepanshu Bisht**
 🔗 [@deepanshu-bisht-dev](https://github.com/deepanshu-bisht-dev)
 
+## 🔥 GitHub Streak
+
+![GitHub Streak](https://streak-stats.demolab.com?user=deepanshu-bisht-dev&theme=radical&hide_border=true&background=0D1117&stroke=00F5FF&ring=00F5FF&fire=FF6B6B&currStreakLabel=00F5FF)
+
 <sub>⭐ Star the repo if you'd like to follow along as it's built out.</sub>

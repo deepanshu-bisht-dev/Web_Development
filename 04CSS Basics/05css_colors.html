@@ -1,0 +1,58 @@
+<!-- Colors play a major role in the visual appearance of a website. In CSS, you can apply colors to text, backgrounds, borders, and other elements using different formats. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colors</title>
+    <style>
+        /* CSS support various formats to define colors:
+        1. Named Colors  */
+        h1 {
+            color: red;
+        }
+
+        /* 2. Hex Codes - A hexadecimal value represent a color using six digit code. */
+        p {
+            color: #138ad4;
+        }
+
+        /* 3. RGB - You can define a color using rgb color model. */
+        h1 {
+            background-color: rgb(119, 33, 199);
+            /* Value ranges from 0 to 255 according to the intensity of color you want. */
+        }
+
+        /* 4. RGBA (RGB + Alpha) - Adds opacity to RGB using the alpha channel (0 = fully transparent, 1 = fully opaque). */
+        p {
+            background-color: rgb(205, 14, 14, 0.6);
+        }
+
+        /* 5. HSL (Hue, Saturation, Lightness)
+            Another way to define colors using:
+
+            Hue (color angle on the color wheel)
+            Saturation (intensity of the color)
+            Lightness (brightness) */
+
+        h2 {
+            color: hsl(240, 100%, 50%);
+        }
+
+        /* 6. HSLA (HSL + Alpha) - */
+        section {
+            background-color: hsla(120, 60%, 70%, 0.3);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Colors</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti quidem et reprehenderit eum perspiciatis
+        distinctio veniam incidunt doloribus illum eligendi possimus, fuga voluptatibus!</p>
+    <h2> Colors again</h2>
+
+</body>
+
+</html>

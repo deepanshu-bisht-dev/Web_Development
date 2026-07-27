@@ -1,11 +1,12 @@
 <!-- Every HTML element on a page is a rectangular box in the browser, and the Box Model defines how that box behaves. It’s the foundation of spacing, layout, and sizing in CSS. -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Box Models</title>
-<!-- What is the Box Model?
+    <!-- What is the Box Model?
 The box model consists of four layers, from innermost to outermost:
 
 |---------------------------|
@@ -13,19 +14,58 @@ The box model consists of four layers, from innermost to outermost:
 |  |---------------------|  |
 |  |      Border         |  |
 |  |  |---------------|  |  |
-|  |  |   Padding      |  |  |
-|  |  |  |---------|   |  |  |
-|  |  |  | Content |   |  |  |
-|  |  |  |---------|   |  |  |
+|  |  |   Padding     |  |  |
+|  |  |  |---------|  |  |  |
+|  |  |  | Content |  |  |  |
+|  |  |  |---------|  |  |  |
 |  |  |---------------|  |  |
 |  |---------------------|  |
-|---------------------------| 
--->
+|---------------------------| -->
+    <style>
+        /* The four parts of box models-
+        1. Content - The actual text, image or element inside a box. */
+        #Div1 {
+            width: 23px;
+            height: 23px;
+            /* 2. Padding - Space inside the box between content and border.It pushes the content inward increasing total box height. */
+            padding: 45px;
+            /* 3. Border - It is around padding. You can control its width,style and color. */
+            border: 21px solid black;
+            /* Margin - Space outside the border. Used to create distance between elements.Margins do not have a background color and are completely transparent. */
+            margin: 30px;
+            /* The actual space this element occupies:display: 
+            Width : 23 + 2*45 (padding) + 2*21 ( border) = 165px
+            Height : 23 + 2*45 (padding) + 2*21 ( border) = 165px  */
+        }
+
+        /* By default, CSS uses content-box, where width and height apply only to the content, not padding or border.To include padding and border inside the specified dimensions, use: */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        /* With border-box, the total width stays fixed, and padding/border are adjusted inside the box. */
+        .card {
+            width: 400px;
+            padding: 20px;
+            border: 10px solid black;
+            box-sizing: border-box;
+        }
+        /* In this case, the total width remains 400px, including padding and border. */
+    </style>
 </head>
+
 <body>
     <h1>Box Models</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi commodi id amet, voluptate, minus ab at sunt quaerat qui eaque impedit repellat delectus repellendus repudiandae fugiat consectetur quis minima! Veniam reiciendis eum pariatur deserunt sit?</p>
+    <div class="card">Card</div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi commodi id amet, voluptate, minus ab at sunt
+        quaerat qui eaque impedit repellat delectus repellendus repudiandae fugiat consectetur quis minima! Veniam
+        reiciendis eum pariatur deserunt sit?</p>
     <span>Span 1</span>
-    <span>Span 2</span>    
+    <span>Span 2</span>
+    <div id="Div1">Div 1</div>
+
+
 </body>
+
 </html>

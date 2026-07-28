@@ -1,0 +1,77 @@
+Units in CSS - CSS units define the size, spacing, and positioning of elements on a web page. Understanding units is essential for building layouts that are consistent, responsive, and easy to manage.
+
+Two Categories of Units -
+
+1. Absolute Units - These do not change based on screen size or parent element. Use them for fixed-size elements (use cautiously in responsive designs).
+
+Unit	        Description
+px	        Pixels (most common absolute unit)
+pt	        Points (1/72 of an inch)
+cm	        Centimeters
+mm	        Millimeters
+in	        Inches
+Example:  
+h1 {
+  font-size: 24px;
+}
+
+2. Relative Units - These are responsive and scale based on parent elements, root font size, or viewport size.
+
+Unit	         Description
+%	          Relative to parent element
+em	          Relative to parent’s font size
+rem	          Relative to root font size (usually <html>)
+vw	          1% of viewport width
+vh	          1% of viewport height
+vmin	      1% of smaller viewport dimension
+vmax	      1% of larger viewport dimension
+    
+
+Commonly Used Units
+
+1. px (Pixels)
+p {
+  margin: 10px;
+}
+
+Fixed spacing that does not scale with screen size.
+
+2. % (Percentage)
+div {
+  width: 80%;
+}
+
+Useful for making widths or heights relative to parent elements.
+
+3. em vs rem
+em: Relative to the font size of the parent.
+div {
+  font-size: 2em; /* 2 times the parent's font size */
+}
+
+rem: Relative to the font size of the root (html) element.
+html {
+  font-size: 16px;
+}
+ 
+h1 {
+  font-size: 2rem; /* 32px */
+}
+
+Use rem for consistency in modern responsive design.
+
+4. vw and vh
+.container {
+  width: 100vw;   /* Full width of the viewport */
+  height: 100vh;  /* Full height of the viewport */
+}
+
+These units are powerful for creating fullscreen layouts.
+
+5. calc() Function
+Combine different units using calc():
+
+section {
+  width: calc(100% - 200px);
+}
+

@@ -1,0 +1,43 @@
+The Display Property
+The display property controls how an element is rendered on the page — whether it takes up a full line, shares space with others, behaves like a container, or is completely hidden.
+
+Understanding how display works is critical to mastering layout in CSS.
+
+Common Display Values
+1. block
+The element takes up the full width of its container.
+Starts on a new line.
+Examples of block elements: <div>, <p>, <h1>–<h6>, <section>, <article>
+
+div {
+  display: block;
+}
+
+2. inline
+The element takes up only as much width as its content.
+Can appear next to other inline elements.
+Cannot set width, height, margin-top/bottom, or padding-top/bottom effectively.
+Examples: <span>, <a>, <strong>, <em>
+
+span {
+  display: inline;
+}
+
+3. inline-block
+Behaves like inline but allows width, height, margin, and padding to be set.
+Does not force a line break.
+button {
+  display: inline-block;
+  width: 150px;
+  height: 40px;
+}
+
+4. none
+Completely hides the element from the page.
+The element is not rendered, and does not take up any space.
+.alert {
+  display: none;
+}
+
+Useful for toggling visibility dynamically (e.g., with JavaScript).
+

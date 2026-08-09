@@ -1,0 +1,91 @@
+<!-- Media Queries allow you to create responsive designs by applying CSS rules based on the device’s characteristics — such as screen width, height, orientation, and resolution.
+
+They are essential for building mobile-first, responsive websites that adapt to various screen sizes (phones, tablets, desktops). -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        .container {
+            height: 40vh;
+            width: 60vw;
+            background-color: blueviolet;
+        }
+
+        .box {
+            height: 40px;
+            width: 100px;
+            background-color: aliceblue;
+            margin: 5px;
+        }
+
+        /* Basic Syntax to write media queries -
+           @media (condition) {
+              CSS rules 
+            } */
+        @media (max-width: 768px) {
+            .container {
+                background-color: red;
+                /* This condition is applied only whn the screen width is 768px or less. */
+            }
+
+            /* Common Conditions -->
+            Media Feature	Description	                           Example
+            max-width	Target screens up to a width	       @media (max-width: 600px)
+            min-width	Target screens starting from a width   @media (min-width: 1024px)
+            orientation	Target portrait or landscape mode	@media (orientation: landscape)
+            max-height	Target screen height	               @media (max-height: 500px)
+            resolution	Target pixel density	           @media (min-resolution: 2dppx) */
+        }
+
+        /* Combining multiple conditions - */
+        @media (min-width: 600px) and (max-width: 1024px) {
+            .container {
+                background-color: beige; /* You can ccombine conditions using and, or, not */
+            }
+        }
+        /*  Mobile-first (default) 
+        .card {
+          font-size: 14px;
+        }
+
+        Tablet and up 
+        @media (min-width: 768px) {
+          .card {
+    font-size: 16px;
+        }
+    }
+
+     Desktop and up 
+        @media (min-width: 1024px) {
+          .card {
+            font-size: 18px;
+          }
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+        <div class="box">Box 4</div>
+    </div>
+</body>
+
+</html>
+<!-- Media Queries to print  
+ @media print {
+  body {
+    background: white;
+    color: black;
+  }
+
+  .no-print {
+    display: none;
+  }
+}   It is used to style web pages when printed.-->

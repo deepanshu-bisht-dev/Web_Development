@@ -21,8 +21,8 @@ This repo is where I'm learning web development, step by step — starting with 
 
 | # | Topic | Status |
 |---|-------|--------|
-| 01 | `html_basics` | ✅ Done |
-| 02 | `advanced_html` | ✅ Done |
+| 01 | `html_basics` |  Done |
+| 02 | `advanced_html` |  Done |
 | 03 | CSS Basics | 🔜 Coming up |
 | 04 | Full Websites | 🔜 Planned |
 
